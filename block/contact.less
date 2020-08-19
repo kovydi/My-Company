@@ -1,0 +1,176 @@
+//main:../style.less
+.contact{
+    background-color: @white;
+    }
+
+.contact__inner{
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    margin: 0 auto;
+    width: 750px;
+    }
+
+.contact__head{
+    text-align: center;
+}
+
+.contact__title{
+    display: inline-block;
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 90px;
+    color: @black;
+    }
+
+.contact__title::before{
+    content: "";
+    border: 2px solid @orange;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    display: none;
+    }
+
+.contact__title:hover::before{
+    display: block;
+}    
+
+.contact__text{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: italic;
+    color: @pearl-gray-light;
+    }
+
+.contact__text{
+    padding-bottom: 110px;
+    }
+
+.input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+    }
+
+   
+
+.input__name{
+    position: relative;
+    width: 50%;
+    }
+
+div.input__name input{
+    height: 44px;
+    width: 95%;
+    }    
+
+.input__name::before{
+    content: "Name";
+    font-size: 14px;
+    position: absolute;
+    color: @dim-gray;
+    font-weight: 400;
+    top: -20px;
+    }
+
+.star-name{
+    color: @red;
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    }
+
+div.input__email input{
+    height: 44px;
+    width: 95%;
+    
+    }
+
+.input__email{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 50%;
+    
+    }
+
+.input__email::before{
+    content: "Email addres";
+    font-size: 14px;
+    position: absolute;
+    color: @dim-gray;
+    font-weight: 400;
+    top: -20px;
+    left: 18px;
+    }
+
+.star-email{
+    color:@red;
+    position: absolute;
+    top: -20px;
+    left: 103px;
+    }
+
+div.input__paceholder textarea{
+    height: 164px;
+    width: 100%;
+}
+
+.input__paceholder{
+    position: relative;
+}
+
+.input__paceholder::before{
+    content: "Message";
+    font-size: 14px;
+    position: absolute;
+    color: @dim-gray;
+    font-weight: 400;
+    top: -20px;
+    }
+
+.star-placeholder{
+    color: @red;
+    position: absolute;
+    top: -20px;
+    left: 58px;
+    }
+
+.button{
+    text-align: right;
+    align-items: right;
+    margin: auto;
+    width: 100%;
+    margin-top:30px;
+    }
+
+.btn{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 165px;
+    height: 40px;
+    background-color:@orange;
+    font-size: 16px;
+    font-weight: 800;
+    color:@white;
+    
+    }
+
+.lower-wrapper{
+    height: 1px;
+    background-color: @dim-gray;
+    } 
+

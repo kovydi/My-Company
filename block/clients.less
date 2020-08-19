@@ -1,0 +1,62 @@
+//main:../style.less
+.clients{
+    background-color: @black-dark;
+}
+
+.clients__logo{
+    vertical-align: center;
+    margin-right: 30px;
+    
+}
+
+.clients__logo:last-child{
+    margin-right: 0px;
+}
+
+
+.clients__inner{
+    padding-top: 102px;
+    padding-bottom: 210px;
+}
+
+.clients__list-inner{
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.clients__list-inner img{
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+}
+
+.clients__head{
+    text-align: center;
+}
+
+.clients__title{
+    display: inline-block;
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 150px;
+    cursor: pointer;
+}
+
+.clients__title::before{
+    content: "";
+    border: 2px solid @orange;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    display: none;
+}
+
+.clients__title:hover::before{
+    display: block;
+}
+
