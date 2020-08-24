@@ -15,7 +15,7 @@
 
 .team__title{
     display: inline-block;
-    padding-bottom: 140px;
+    margin-bottom: 140px;
     font-size: 44px;
     text-transform: uppercase;
     text-align: center;
@@ -76,4 +76,44 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
+}
+
+@media (max-width:1024px){
+    .team__inner{
+        padding-top: 30px;
+        padding-bottom: 30px;   
+    }
+    .team__title{
+        margin-bottom: 50px; 
+    }  
+}
+
+@media (max-width:926px){
+    .about__team-photo{
+        height: 100px;
+        width: 100px; 
+    }
+    .about__team-name{
+        font-size: 15px;  
+    }  
+    .about__team-text{
+        font-size: 13px;  
+    }    
+}
+
+@media (max-width:864px){
+    .about__team-photo{
+        height: 80px;
+        width: 80px; 
+    }
+    .about__team-name{
+        font-size: 14px;  
+    }  
+    .about__team-text{
+        font-size: 12px;  
+    }    
+}
+
+@media (max-width:790px){
+    flex-wrap: wrap;
 }

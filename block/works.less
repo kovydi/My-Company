@@ -22,7 +22,7 @@
     font-weight: 300;
     color: @black-light;
     position: relative;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
     cursor: pointer;
     }
 
@@ -39,10 +39,8 @@
     display: block;
 }    
 
-
-
 .works__text{
-    padding-bottom: 178px;
+    margin-bottom: 178px;
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
@@ -60,3 +58,29 @@
 .works__presentation-list img{
     margin-bottom: 32px;
     }
+
+@media (max-width:1024px){
+        .works__inner{
+            padding-top: 30px;
+            padding-bottom: 30px;   
+        }
+        .works__title{
+        margin-bottom: 50px;
+        }
+        .works__text{
+            margin-bottom: 50px;  
+        }
+    }
+
+@media (max-width:840px){
+    .works__presentation-list img{
+        width: 224px;
+        height: 200px;
+    }
+} 
+
+@media (max-width:810px){
+    .works__text{
+        font-size: 14px;
+    }
+}

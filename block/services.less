@@ -64,6 +64,7 @@ div.services__list-info h3{
     font-size: 24px;
     text-transform: uppercase;
     padding-bottom:18px;
+    color: @dim-gray;
     }
 
 div.services__list-info p{
@@ -75,3 +76,31 @@ div.services__list-info p{
 div.services__list-info img{
     margin-bottom:30px;
     }
+
+@media (max-width:1024px){
+        .services__inner{
+            padding-top: 30px;
+            padding-bottom: 30px;   
+        }
+        .services__title{
+            margin-bottom: 30px; 
+        } 
+        .services__text{
+            margin-bottom: 50px;
+        }
+        div.services__list-info img{
+            margin-bottom:10px;
+            } 
+    }
+
+@media (max-width:864px){
+    .services__list-info{
+        width: 180px;
+    }
+}
+
+@media (max-width:810px){
+    .services__text{
+        font-size: 14px;
+    }
+}

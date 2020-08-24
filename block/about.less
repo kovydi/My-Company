@@ -37,7 +37,7 @@ div.about__image img{
     font-size: 34px;
     font-weight: 400;
     position: relative;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
     cursor: pointer;
     }
 
@@ -63,7 +63,7 @@ div.about__image img{
     }
 
 .about__present{
-    padding-top: 50px;
+    margin-top: 50px;
     }
 
 .about__present-inner{
@@ -86,4 +86,52 @@ li.about__present-list span{
     font-size: 16px;
     font-weight: 300;
     font-style: italic;
+    }
+
+    @media (max-width:1024px){
+        .about__inner{
+            padding-top: 30px;
+            padding-bottom: 30px;   
+        }  
+    }
+
+    @media (max-width:992px){
+        .about__text{
+            font-size: 15px;
+            width: auto;
+        }
+        .about__present-list{
+            font-size: 14px;
+        }
+        .about__info-wrapper{
+            width: auto;
+        }
+        .about__title{
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width:890px){
+        .about__title{
+            font-size: 30px;  
+        }
+    }
+
+    @media (max-width:810px){
+        .about__inner{
+            text-align: center;
+            display: block;
+        }
+        .about__image{
+            width: 100%;
+        }
+        .about__info{
+            width: 100%;
+        }
+        .about__title{
+            margin-bottom: 10px;
+        }
+        .about__present{
+            margin-top: 20px;
+            }
     }
